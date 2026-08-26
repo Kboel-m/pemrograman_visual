@@ -1,112 +1,387 @@
-# pemrograman_visual
-Menambahkan pengantar tentang pemrograman visual, Visual Studio, dan VB.NET dalam file readme.md.
-
 # 🖥️ Pemrograman Visual
 
-[![D3 Teknik Informatika USU](https://img.shields.io/badge/Prodi-D3_Teknik_Informatika_USU-006633?style=for-the-badge&logo=academic-cap&logoColor=white)](https://usu.ac.id)
-[![Mata Kuliah](https://img.shields.io/badge/Matkul-Pemrograman_Visual-8A2BE2?style=for-the-badge)](#)
-[![IDE](https://img.shields.io/badge/IDE-Visual_Studio_2022-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)](https://visualstudio.microsoft.com/)
+[![D3 Teknik Informatika USU](https://img.shields.io/badge/Prodi-D3_Teknik_Informatika_USU-006633?style=for-the-badge\&logo=academic-cap\&logoColor=white)](https://usu.ac.id)
+[![Mata Kuliah](https://img.shields.io/badge/Mata_Kuliah-Pemrograman_Visual-8A2BE2?style=for-the-badge)](#)
+[![IDE](https://img.shields.io/badge/IDE-Visual_Studio_2022-5C2D91?style=for-the-badge\&logo=visual-studio\&logoColor=white)](https://visualstudio.microsoft.com/)
 
-Selamat datang di repositori catatan dan dokumentasi praktikum **Pemrograman Visual**. Repositori ini mencatat perkembangan belajar, materi perkuliahan, serta penyelesaian tugas praktikum mata kuliah Pemrograman Visual pada Program Studi **D3 Teknik Informatika, Universitas Sumatera Utara (USU)**.
+Repositori ini berisi **catatan, materi, dokumentasi praktikum, dan tugas** dalam mata kuliah **Pemrograman Visual** pada Program Studi **D3 Teknik Informatika, Universitas Sumatera Utara (USU)**.
+
+Materi dalam repositori ini berfokus pada konsep pemrograman berbasis antarmuka grafis (*Graphical User Interface/GUI*), pengembangan aplikasi desktop menggunakan **Microsoft Visual Studio**, serta implementasi menggunakan bahasa pemrograman **Visual Basic .NET (VB.NET)**.
 
 ---
 
 ## 📌 Identitas Praktikan
 
-| Informasi | Detail |
-| :--- | :--- |
-| **Nama Mahasiswa** | Kabul |
-| **Repositori Utama** | [Mcx-XII/pemrograman_visual](https://github.com/Mcx-XII/pemrograman_visual) |
-| **Program Studi** | D3 Teknik Informatika |
-| **Fakultas / Kampus** | Vokasi / Universitas Sumatera Utara |
-| **Tahun Ajaran** | 2024 / 2025 |
+| Informasi          | Detail                                                                      |
+| :----------------- | :-------------------------------------------------------------------------- |
+| **Nama Mahasiswa** | Kabul                                                                       |
+| **Repositori**     | [Mcx-XII/pemrograman_visual](https://github.com/Mcx-XII/pemrograman_visual) |
+| **Program Studi**  | D3 Teknik Informatika                                                       |
+| **Fakultas**       | Vokasi                                                                      |
+| **Universitas**    | Universitas Sumatera Utara                                                  |
+| **Mata Kuliah**    | Pemrograman Visual                                                          |
+| **Tahun Ajaran**   | 2024 / 2025                                                                 |
 
 ---
 
-## 💡 Apa itu Visual Programming?
+## 📖 Pengantar Pemrograman Visual
 
-**Pemrograman Visual (*Visual Programming*)** adalah paradigma pengembangan perangkat lunak yang memungkinkan pemrogram membuat aplikasi menggunakan elemen grafis, blok logika, serta antarmuka visual dibanding sekadar menulis sintaksis kode berbasis teks secara manual.
+**Pemrograman Visual (*Visual Programming*)** merupakan pendekatan dalam pengembangan perangkat lunak yang memanfaatkan elemen visual untuk membantu programmer dalam merancang antarmuka, mengatur komponen aplikasi, serta mengembangkan alur interaksi pengguna.
 
-Dengan pendekatan ini, struktur program, tata letak antarmuka (*UI*), dan aliran logika dapat dirancang secara intuitif melalui manipulasi langsung (*direct manipulation*) pada kanvas desain.
+Berbeda dengan pendekatan pemrograman yang sepenuhnya berfokus pada penulisan kode secara tekstual, pemrograman visual menyediakan lingkungan pengembangan yang memungkinkan berbagai komponen aplikasi dirancang secara langsung melalui **Visual Designer**, seperti form, tombol, kotak teks, label, tabel, dan komponen antarmuka lainnya.
 
----
+Meskipun demikian, pemrograman visual tidak berarti seluruh proses pengembangan dilakukan tanpa kode. Pada lingkungan seperti Visual Studio, elemen visual digunakan untuk membangun antarmuka, sedangkan **kode program digunakan untuk mengatur logika, proses, dan perilaku aplikasi**.
 
-## ⚙️ Karakteristik Utama Pemrograman Visual
+Salah satu konsep penting dalam pemrograman visual adalah **event-driven programming**, yaitu pendekatan di mana program merespons berbagai kejadian (*event*) yang terjadi selama aplikasi digunakan.
 
-1. **Abstraksi Berbasis Grafis**  
-   Logika dan aliran eksekusi program diwakili oleh komponen visual, diagram alir, atau blok pembangun yang saling terhubung.
-   
-2. **Antarmuka Drag-and-Drop**  
-   Elemen antarmuka pengguna (*User Interface*) seperti tombol, tabel, teks input, dan kontrol lainnya ditempatkan ke dalam form dengan cara digeser dan dilepas (*drag-and-drop*).
+Contohnya:
 
-3. **Prinsip WYSIWYG (*What You See Is What You Get*)**  
-   Tampilan aplikasi saat dirancang pada *designer window* akan sama persis dengan hasil akhir saat aplikasi dijalankan.
-
-4. **Arsitektur Berorientasi Kejadian (*Event-Driven*)**  
-   Alur kerja aplikasi berpusat pada aksi atau kejadian (*event*) yang dilakukan pengguna, seperti dikliknya tombol, pergerakan mouse, atau penekanan tombol keyboard.
+* Pengguna menekan tombol.
+* Pengguna memasukkan data.
+* Pengguna memilih suatu menu.
+* Pengguna menggerakkan atau mengklik mouse.
+* Pengguna menekan tombol pada keyboard.
 
 ---
 
-## 🎯 Manfaat & Keterbatasan
+## 🧩 Konsep Dasar Pemrograman Visual
 
-### Keunggulan
-* **Kemudahan Pembelajaran**: Mempercepat pemahaman alur pemrograman bagi pemula tanpa terhambat oleh kesalahan sintaksis (*syntax error*).
-* **Pengembangan Cepat (*Rapid Application Development*)**: Mempercepat pembuatan prototipe dan antarmuka aplikasi desktop secara visual.
-* **Struktur Ter visualisasi**: Memudahkan pelacakan logika dan tata letak komponen secara langsung.
-* **Meminimalisir Kesalahan Penulisan**: Mengurangi risiko *typo* pada nama variabel atau fungsi bawaan antarmuka.
+Beberapa konsep utama yang dipelajari dalam pemrograman visual antara lain:
 
-### Keterbatasan
-* **Fleksibilitas Terbatas**: Kurang fleksibel jika dibandingkan dengan pemrograman teks *low-level* untuk algoritma yang sangat kompleks.
-* **Performa & Overhead**: Beberapa platform visual memerlukan *runtime environment* yang membutuhkan konsumsi memori lebih besar.
-* **Skalabilitas**: Kurang efisien apabila digunakan untuk membangun proyek sistem berskala sangat besar (*enterprise level*).
+### 1. Graphical User Interface (GUI)
+
+**GUI** merupakan antarmuka yang memungkinkan pengguna berinteraksi dengan aplikasi melalui elemen visual, seperti:
+
+* Button
+* Label
+* TextBox
+* ComboBox
+* CheckBox
+* RadioButton
+* ListBox
+* DataGridView
+* Menu dan Toolbar
+
+Penggunaan GUI membuat aplikasi lebih mudah digunakan karena pengguna dapat berinteraksi melalui elemen antarmuka tanpa harus menjalankan perintah melalui terminal.
+
+### 2. Event-Driven Programming
+
+Pada pemrograman berbasis event, program akan menjalankan kode tertentu ketika suatu kejadian terjadi.
+
+Sebagai contoh, ketika pengguna menekan tombol **Simpan**, aplikasi dapat menjalankan prosedur untuk memvalidasi dan menyimpan data.
+
+### 3. Visual Designer
+
+Visual Designer memungkinkan developer merancang tampilan aplikasi secara langsung dengan menempatkan komponen pada sebuah form.
+
+Komponen dapat diatur melalui:
+
+* Posisi dan ukuran
+* Nama komponen
+* Warna
+* Font
+* Teks
+* Properti lainnya
+
+### 4. Properties dan Events
+
+Setiap komponen pada aplikasi umumnya memiliki **Properties** dan **Events**.
+
+**Properties** digunakan untuk mengatur karakteristik komponen, sedangkan **Events** digunakan untuk menentukan tindakan yang dilakukan ketika suatu kejadian terjadi.
+
+Contoh:
+
+```text
+Button
+├── Properties
+│   ├── Name
+│   ├── Text
+│   ├── Size
+│   └── BackColor
+│
+└── Events
+    ├── Click
+    └── MouseEnter
+```
 
 ---
 
-## 🛠️ Platform Pemrograman Visual yang Populer
+## 💻 Microsoft Visual Studio
 
-| Platform / Tool | Lingkup Penggunaan & Keterangan |
-| :--- | :--- |
-| **Scratch** | Lingkungan belajar berbasis blok visual yang ideal untuk pemula dan pemahaman logika dasar. |
-| **MIT App Inventor** | Platform pembuatan aplikasi mobile (Android/iOS) menggunakan blok logika visual berbasis web. |
-| **Microsoft Visual Basic (.NET)** | Lingkungan IDE profesional berbasis komponen GUI visual yang digunakan dalam perkuliahan. |
-| **JavaFX / Scene Builder** | Framework perancangan GUI interaktif berbasis drag-and-drop untuk ekosistem Java. |
-| **Node-RED** | Tools visual programming berorientasi *flow-based* untuk integrasi perangkat IoT dan API. |
+**Microsoft Visual Studio** merupakan Integrated Development Environment (**IDE**) yang dikembangkan oleh Microsoft untuk membangun berbagai jenis aplikasi.
+
+Visual Studio menyediakan berbagai fitur yang mendukung proses pengembangan perangkat lunak, seperti:
+
+* Code Editor
+* Visual Designer
+* Debugger
+* IntelliSense
+* Project Management
+* Integrated Build Tools
+* NuGet Package Manager
+* Git Integration
+
+Dalam mata kuliah Pemrograman Visual, Visual Studio digunakan sebagai lingkungan pengembangan untuk membuat aplikasi desktop dengan antarmuka grafis.
 
 ---
 
-## 💻 Lingkungan Kerja & Software Praktikum
+## 🟣 Visual Basic .NET (VB.NET)
 
-Dalam kegiatan praktikum perkuliahan **Pemrograman Visual**, software utama yang digunakan adalah **Microsoft Visual Studio** dengan bahasa **Visual Basic (.NET Framework)**. 
+**Visual Basic .NET (VB.NET)** merupakan bahasa pemrograman yang dikembangkan oleh Microsoft dan berjalan pada ekosistem **.NET**.
 
-Visual Studio menyediakan *Form Designer* berbasis visual yang memudahkan perancangan antarmuka aplikasi Windows Desktop berbasis *Event-Driven*.
+VB.NET memiliki sintaks yang relatif mudah dipahami dan mendukung berbagai konsep pemrograman modern, termasuk:
+
+* Object-Oriented Programming (OOP)
+* Class dan Object
+* Inheritance
+* Encapsulation
+* Polymorphism
+* Exception Handling
+* Event Handling
+* Database Connectivity
+
+Dalam pengembangan aplikasi Windows Forms, VB.NET dapat digunakan untuk mengatur logika serta perilaku komponen yang telah dibuat melalui Visual Designer.
+
+Contoh sederhana event pada sebuah tombol:
+
+```vb
+Private Sub btnHello_Click(sender As Object, e As EventArgs) Handles btnHello.Click
+    MessageBox.Show("Hello, World!")
+End Sub
+```
+
+Kode tersebut akan menjalankan `MessageBox.Show()` ketika tombol `btnHello` menerima event **Click**.
 
 ---
 
-## 📥 Panduan Instalasi Visual Studio
+## 🔗 Hubungan Visual Studio, VB.NET, dan Pemrograman Visual
 
-Berikut adalah langkah-langkah pemasangan perangkat lunak untuk praktikum:
+Ketiga komponen tersebut memiliki peran yang berbeda tetapi saling berkaitan:
 
-1. **Unduh Installer Official**  
-   Kunjungi situs resmi Microsoft Visual Studio di [visualstudio.microsoft.com](https://visualstudio.microsoft.com/) dan pilih tombol **Download Visual Studio**.
+```text
+┌─────────────────────────────┐
+│     Pemrograman Visual      │
+│       (Konsep/Paradigma)    │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│      Visual Studio          │
+│            (IDE)            │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│          VB.NET             │
+│       (Bahasa Program)      │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│     Aplikasi Desktop GUI    │
+│      Windows Forms          │
+└─────────────────────────────┘
+```
 
-2. **Pilih Edisi Community**  
-   Pilih varian **Visual Studio Community** (disarankan versi **2022** atau edisi stabil terbaru). Edisi ini bersifat gratis untuk penggunaan edukasi dan individu.
+Dengan demikian:
 
-3. **Konfigurasi Workload (.NET Desktop Development)**  
-   Setelah *Visual Studio Installer* terbuka, centang pada bagian **.NET Desktop Development** (Pengembangan Desktop .NET). Workload ini mencakup library Visual Basic, Windows Forms Designer, dan .NET SDK.
+> **Pemrograman Visual** merupakan pendekatan pengembangan, **Visual Studio** merupakan lingkungan pengembangan (IDE), sedangkan **VB.NET** merupakan salah satu bahasa pemrograman yang dapat digunakan untuk membangun aplikasinya.
 
-4. **Penyesuaian Component**  
-   Pada tab *Installation Details*, pastikan opsi penunjang seperti *.NET Framework Development Tools* dan *Visual Basic Core* sudah tercentang.
+---
 
-5. **Proses Pemasangan**  
-   Klik **Install / Modify** dan berikan izin (*administrator allowance*). Tunggu hingga proses pengunduhan serta pemasangan selesai hingga muncul status **"All installations are up to date"**.
+## ⚙️ Karakteristik Pemrograman Visual
 
-6. **Uji Coba Pertama**  
-   Buka Visual Studio, pilih **Create a new project**, lalu cari template **Windows Forms App (.NET Framework)** menggunakan bahasa **Visual Basic**.
+### 1. Perancangan Antarmuka Secara Visual
+
+Developer dapat menyusun tampilan aplikasi melalui *designer* dengan menempatkan berbagai kontrol pada form.
+
+### 2. Event-Driven
+
+Program merespons tindakan pengguna melalui event seperti `Click`, `Load`, `KeyPress`, dan berbagai event lainnya.
+
+### 3. Component-Based Development
+
+Aplikasi dibangun menggunakan berbagai komponen yang memiliki fungsi dan properti tertentu.
+
+### 4. Integrasi antara Designer dan Code
+
+Perancangan tampilan dilakukan melalui *designer*, sedangkan logika aplikasi dapat dikembangkan melalui kode program.
+
+### 5. Dukungan Debugging
+
+Visual Studio menyediakan fasilitas debugging untuk membantu menemukan dan memperbaiki kesalahan dalam program.
+
+---
+
+## 🎯 Keunggulan dan Keterbatasan
+
+### ✅ Keunggulan
+
+* Mempermudah pembuatan antarmuka aplikasi desktop.
+* Mempercepat proses pengembangan aplikasi.
+* Memudahkan pemula dalam memahami konsep GUI.
+* Menyediakan berbagai komponen antarmuka siap digunakan.
+* Mendukung pengembangan berbasis event.
+* Dilengkapi fitur debugging dan IntelliSense.
+* Mendukung integrasi dengan database dan berbagai library .NET.
+
+### ⚠️ Keterbatasan
+
+* Pengembangan aplikasi tetap membutuhkan pemahaman pemrograman dan logika.
+* Ketergantungan pada framework dan lingkungan .NET yang digunakan.
+* Aplikasi desktop tertentu memerlukan konfigurasi lingkungan Windows yang sesuai.
+* Perancangan visual tidak secara otomatis menjamin struktur kode yang baik.
+* Untuk aplikasi berskala besar, diperlukan penerapan arsitektur dan pola desain yang tepat.
+
+---
+
+## 🛠️ Tools dan Platform yang Digunakan
+
+| Tools / Platform          | Fungsi                                         |
+| :------------------------ | :--------------------------------------------- |
+| **Visual Studio 2022**    | IDE untuk pengembangan aplikasi                |
+| **VB.NET**                | Bahasa pemrograman                             |
+| **Windows Forms**         | Framework untuk membangun aplikasi GUI desktop |
+| **.NET / .NET Framework** | Platform dan runtime aplikasi                  |
+| **Git & GitHub**          | Version control dan penyimpanan repositori     |
+
+---
+
+## 📥 Instalasi Visual Studio
+
+Untuk mengikuti praktikum, lingkungan pengembangan dapat disiapkan melalui langkah berikut.
+
+### 1. Unduh Visual Studio
+
+Unduh Visual Studio melalui situs resmi Microsoft:
+
+**https://visualstudio.microsoft.com/**
+
+Disarankan menggunakan **Visual Studio Community** untuk kebutuhan pembelajaran dan pengembangan individu sesuai ketentuan lisensi Microsoft.
+
+### 2. Jalankan Visual Studio Installer
+
+Setelah installer dijalankan, Visual Studio Installer akan menampilkan berbagai *workload* yang tersedia.
+
+### 3. Pilih Workload
+
+Untuk pengembangan aplikasi desktop, pilih:
+
+> **.NET desktop development**
+
+Workload tersebut menyediakan berbagai komponen yang diperlukan untuk pengembangan aplikasi desktop berbasis .NET.
+
+### 4. Pilih Komponen Tambahan
+
+Komponen yang tersedia dapat disesuaikan dengan kebutuhan praktikum, termasuk dukungan terhadap:
+
+* .NET SDK
+* Windows Forms
+* .NET Framework
+* Visual Basic
+* Development Tools
+
+### 5. Lakukan Instalasi
+
+Klik **Install** dan tunggu hingga proses instalasi selesai.
+
+### 6. Membuat Project Baru
+
+Setelah Visual Studio terbuka:
+
+1. Pilih **Create a new project**.
+2. Pilih bahasa **Visual Basic**.
+3. Pilih template aplikasi yang sesuai, seperti **Windows Forms App**.
+4. Tentukan nama dan lokasi project.
+5. Klik **Create**.
+
+> **Catatan:** Template yang tersedia dapat berbeda tergantung versi Visual Studio, workload, dan .NET yang terpasang. Pastikan template yang digunakan sesuai dengan kebutuhan praktikum.
+
+---
+
+## 📚 Materi yang Dipelajari
+
+Repositori ini akan digunakan untuk mendokumentasikan berbagai materi dan praktikum, antara lain:
+
+* Pengenalan Pemrograman Visual
+* Pengenalan Visual Studio
+* Dasar-Dasar VB.NET
+* Windows Forms
+* Properties dan Events
+* Control pada Windows Forms
+* Variabel dan Tipe Data
+* Percabangan
+* Perulangan
+* Procedure dan Function
+* Object-Oriented Programming
+* Pengolahan Data
+* Database Connectivity
+* CRUD (*Create, Read, Update, Delete*)
+* Validasi Input
+* Exception Handling
+* Pembuatan Aplikasi Desktop
+
+---
+
+## 📂 Struktur Repositori
+
+Struktur repositori akan dikembangkan mengikuti materi dan praktikum yang telah dikerjakan.
+
+```text
+pemrograman_visual/
+│
+├── README.md
+│
+├── Pertemuan/
+│   ├── Pertemuan-01/
+│   ├── Pertemuan-02/
+│   ├── Pertemuan-03/
+│   └── ...
+│
+├── Praktikum/
+│   ├── Praktikum-01/
+│   ├── Praktikum-02/
+│   └── ...
+│
+└── Tugas/
+    ├── Tugas-01/
+    ├── Tugas-02/
+    └── ...
+```
+
+Struktur tersebut dapat disesuaikan kembali berdasarkan pembagian materi dan ketentuan praktikum.
+
+---
+
+## 🎓 Tujuan Pembelajaran
+
+Melalui mata kuliah Pemrograman Visual, mahasiswa diharapkan mampu:
+
+1. Memahami konsep dasar pemrograman visual.
+2. Memahami lingkungan pengembangan Microsoft Visual Studio.
+3. Menggunakan VB.NET untuk membangun aplikasi.
+4. Merancang antarmuka aplikasi berbasis GUI.
+5. Menerapkan konsep event-driven programming.
+6. Mengimplementasikan logika pemrograman ke dalam aplikasi desktop.
+7. Mengembangkan aplikasi yang terstruktur dan mudah digunakan.
+8. Mengintegrasikan aplikasi dengan penyimpanan atau database sesuai kebutuhan.
+
+---
+
+## 👨‍💻 Tentang Repositori
+
+Repositori ini merupakan bagian dari dokumentasi pembelajaran **Pemrograman Visual** pada Program Studi **D3 Teknik Informatika, Universitas Sumatera Utara**.
+
+Seluruh materi, source code, tugas, dan hasil praktikum akan dikembangkan serta diperbarui secara bertahap selama proses perkuliahan.
 
 ---
 
 <div align="center">
-  <p>📚 <i>Repositori ini akan terus diperbarui secara berkala sesuai dengan perkembangan materi perkuliahan Pemrograman Visual — D3 Teknik Informatika USU.</i></p>
-</div>
 
+### 📚 Pemrograman Visual — D3 Teknik Informatika USU
+
+*Learning • Developing • Documenting*
+
+**© 2024/2025 Kabul — D3 Teknik Informatika USU**
+
+</div>
