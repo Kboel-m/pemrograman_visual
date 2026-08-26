@@ -1,9 +1,5 @@
 # 🖥️ Pemrograman Visual
 
-[![D3 Teknik Informatika USU](https://img.shields.io/badge/Prodi-D3_Teknik_Informatika_USU-006633?style=for-the-badge\&logo=academic-cap\&logoColor=white)](https://usu.ac.id)
-[![Mata Kuliah](https://img.shields.io/badge/Mata_Kuliah-Pemrograman_Visual-8A2BE2?style=for-the-badge)](#)
-[![IDE](https://img.shields.io/badge/IDE-Visual_Studio_2022-5C2D91?style=for-the-badge\&logo=visual-studio\&logoColor=white)](https://visualstudio.microsoft.com/)
-
 Repositori ini berisi **catatan, materi, dokumentasi praktikum, dan tugas** dalam mata kuliah **Pemrograman Visual** pada Program Studi **D3 Teknik Informatika, Universitas Sumatera Utara (USU)**.
 
 Materi dalam repositori ini berfokus pada konsep pemrograman berbasis antarmuka grafis (*Graphical User Interface/GUI*), pengembangan aplikasi desktop menggunakan **Microsoft Visual Studio**, serta implementasi menggunakan bahasa pemrograman **Visual Basic .NET (VB.NET)**.
